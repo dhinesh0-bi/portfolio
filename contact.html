@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        body{
+            padding: 0;
+            position: relative;
+        }
+        .image{
+            position: absolute;
+            top: 8.5rem;
+            left: 9rem;
+        }
+        a {
+
+            text-decoration: none;
+            color: white;
+        }
+
+        .navbar {
+            background-color: transparent;
+            border-style: solid;
+            opacity: 0.8;
+            border: 5px 8px 4px;
+            border-color: transparent;
+            padding: 10px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 0.5rem;
+        }
+
+    .nav-container {
+            position: relative;
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+    .nav-button {
+            position: absolute;
+            left: 30rem;
+            padding: 10px 20px;
+            background-color: var(--bar-fill, #3b82f6);
+            color: white;
+            font-size: 0.7rem;
+            border: 2px solid;
+            border-radius: 30px;
+            font-weight: bold;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            transition: background 0.4s ease, border-color 0.4s ease;
+        }
+    body.light-mode {
+        background-color: #ffffff;
+        color: #111827;
+        border-color: #0e1114;
+    }
+
+    body.dark-mode {
+        background-color: #0e1114;
+        color: #f5f5f5;
+        border-color: #f5f5f5;
+    }
+
+
+    .theme-toggle {
+        background-color: var(--bar-fill, #3b82f6);
+        border: 1px black thin;
+        height: 2.5rem;
+        width: 15%;
+        border-radius: 25%;
+        padding-bottom: 5px;
+        font-size: 1.5rem;
+        cursor: pointer;
+        position: absolute;
+        margin-right: -830%;
+        margin-top: -2%;
+        margin-bottom: 1%;
+    }
+
+    .contact-wrraper{
+        width: 25rem;
+        height: 26rem;
+        border-radius: 0%;
+        position: absolute;
+        left: 45rem;
+        top: 10rem;
+        text-align: center;
+    }
+
+    .linkedin-button {
+        display: inline-flex;
+        align-items: center;
+        padding: 0.5rem 1rem;
+        background-color: #0a66c2;
+        height: 1.5rem;
+        width: 12rem;
+        position: absolute;
+        color: #ffffff;
+        text-decoration: none;
+        border-radius: 0px;
+        font-weight: 400;
+        transition: background-color 0.3s;
+        font-family: sans-serif;
+        top: 5rem;
+        left: 6.5rem;
+        border-radius: 10px;
+        justify-content: space-between;
+        border: rgb(0, 0, 0) 2px solid;
+    }
+
+    .linkedin-button:hover {
+    background-color: #fffdfd;
+        color: black;
+        border: #000000;}
+
+    .button1{
+        display: inline-flex;
+        align-items: center;
+        padding: 0.5rem 1rem;
+        background-color: #ffce1b;
+        height: 1.5rem;
+        width: 12rem;
+        position: absolute;
+        color: #ffffff;
+        text-decoration: none;
+        border-radius: 0px;
+        font-weight: 400;
+        transition: background-color 0.3s;
+        font-family: sans-serif;
+        top: 8rem;
+        left: 6.5rem;
+        border-radius: 10px;
+        justify-content: space-between;
+        border: rgb(0, 0, 0) 2px solid;
+    }
+    .button1:hover {
+        background-color: hsl(0, 0%, 100%);
+        color: black;
+        border: #000000;
+    }
+
+    .button3{
+        display: inline-flex;
+        align-items: center;
+        padding: 0.5rem 1rem;
+        background-color: #e33846;
+        height: 1.5rem;
+        width: 15rem;
+        position: absolute;
+        color: #ffffff;
+        text-decoration: none;
+        border-radius: 0px;
+        font-weight: 400;
+        transition: background-color 0.3s;
+        font-family: sans-serif;
+        top: 11.3rem;
+        left: 5.3rem;
+        border-radius: 10px;
+        justify-content: space-between;
+        border: rgb(6, 13, 12) 2px solid;
+    }
+    .button3:hover {
+        background-color: #bcc3c2;
+        color: black;
+        border: #020302;
+    }
+    .button4{
+        display: inline-flex;
+        align-items: center;
+        padding: 0.5rem 1rem;
+        background-color: #00ea6d;
+        height: 1.5rem;
+        width: 12rem;
+        position: absolute;
+        color: #ffffff;
+        text-decoration: none;
+        border-radius: 0px;
+        font-weight: 400;
+        transition: background-color 0.3s;
+        font-family: sans-serif;
+        top: 14.5rem;
+        left: 6.5rem;
+        border-radius: 10px;
+        justify-content: space-between;
+        border: rgb(6, 13, 12) 2px solid;
+    }
+    .button4:hover {
+        background-color: #bcc3c2;
+        color: black;
+        border: #020302;
+    }
+    .button5{
+        display: inline-flex;
+        align-items: center;
+        padding: 0.5rem 1rem;
+        background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+        background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+        background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );    height: 1.5rem;
+        width: 12rem;
+        position: absolute;
+        color: #ffffff;
+        text-decoration: none;
+        border-radius: 0px;
+        font-weight: 400;
+        transition: background-color 0.3s;
+        font-family: sans-serif;
+        top: 17.8rem;
+        left: 6.5rem;
+        border-radius: 10px;
+        justify-content: space-between;
+        border: rgb(6, 13, 12) 2px solid;
+    }
+    .button5:hover {
+        background-color: #bcc3c2;
+        color: black;
+        border: #020302;
+    }
+
+    .button6{
+        display: inline-flex;
+        align-items: center;
+        padding: 0.5rem 1rem;
+    height: 1.5rem;
+        width: 12rem;
+        background-color: #006a50;
+        position: absolute;
+        color: #ffffff;
+        text-decoration: none;
+        border-radius: 0px;
+        font-weight: 400;
+        transition: background-color 0.3s;
+        font-family: sans-serif;
+        top: 21rem;
+        left: 6.5rem;
+        border-radius: 10px;
+        justify-content: space-between;
+        border: rgb(6, 13, 12) 2px solid;
+    }
+    .button6:hover {
+        background-color: #bcc3c2;
+        color: black;
+        border: #020302;
+    }
+
+    .ft{
+        position: absolute;
+        left: 38rem;
+        top: 37rem;
+    }
+
+    </style>
+</head>
+<body>
+       <div class="navbar">
+        <div class="nav-container">
+        <button class="nav-button" ><a href="index.html">Home</a></button>
+        <button class="nav-button" ><a href="index.html">Skills</a></button>
+        <button class="nav-button" ><a href="index.html">Project</a></button>
+        <button id="themeToggle" class="theme-toggle">🌙</button>
+        </div>
+        </div>
+        <div class="image">
+           <img src="hi-removebg-preview.png" alt="contact" >
+        </div>
+        <div class="contact-wrraper">
+            <div>
+                <h1 class="h1">Contact Me</h1>
+                <a href="+91 7904936949" target="_blank" class="button1">
+                <img src="telephone (1).svg" alt="telephone" class="icon" width="25px" height="25px" />
+                +91 7904936949
+                </a>  
+                <a href="https://www.linkedin.com/in/dhinesh-k-7b6902272" target="_blank" class="linkedin-button">
+                <img src="linkedin.png" alt="LinkedIn" class="icon" width="25px" height="25px" />
+                Connect to LinkedIn                    
+                </a>  
+                <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=kdhinesh2005@gmail.com" target="_blank" class="button3">
+                <img src="envelope-fill (1).svg" alt="email" class="icon" width="25px" height="25px" />
+                kdhinesh2005@gmail.com
+                </a>
+                <a href="https://wa.me/qr/ZWN4Q5RBSIFEE1" target="_blank" class="button4">
+                <img src="whatsapp (1).svg" alt="LinkedIn" class="icon" width="25px" height="25px" />
+                whatsapp   
+                </a>  
+                <a href="https://www.instagram.com/dhinesh__official._/profilecard/?igsh=aGtnYnB4bWVvOHdm" target="_blank" class="button5">
+                <img src="instagram.svg" alt="LinkedIn" class="icon" width="25px" height="25px" />
+                Instagram
+                </a> 
+                <a href="https://github.com/dhinesh0-bi" target="_blank" class="button6">
+                <img src="github-seeklogo.png" alt="LinkedIn" class="icon" width="25px" height="25px" />
+                Github
+                </a>      
+            </div>
+        </div>
+    <script>
+        const toggleBtn = document.getElementById('themeToggle');
+        const body = document.body;
+
+        if (localStorage.getItem('theme') === 'dark') {
+                body.classList.add('dark-mode');
+                toggleBtn.textContent = '☀️';
+            } 
+        else {
+                body.classList.add('light-mode');
+            }
+
+        toggleBtn.addEventListener('click', () => {
+                body.classList.toggle('dark-mode');
+                body.classList.toggle('light-mode');
+                const isDark = body.classList.contains('dark-mode');
+                toggleBtn.textContent = isDark ? '☀️' : '☾';
+                localStorage.setItem('theme', isDark ? 'dark' : 'light');
+            });
+    </script>
+    <footer class="ft">
+          <p>© Copyright 2025</p>
+    </footer>
+</body>
+</html>
